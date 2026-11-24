@@ -12,7 +12,9 @@ In both industries, announcements with the best earnings news (top third by SUE)
 - SUE = (EPS this quarter - EPS four quarters ago) / stock price one quarter ago.
 - CAR = the stock's return minus the market's return, added over the day before, the day of and the day after the announcement. The five largest |CAR| events in each industry were removed, and CAR is winsorized at 1% and 99%.
 
-![Figure 1](figures/figure1.png)
+![Figure 1] 
+<img width="1632" height="920" alt="image" src="https://github.com/user-attachments/assets/d32db538-88ea-4092-a2bf-e0e66fded37e" />
+
 
 ## Is the difference real?
 **t-test (High SUE group minus Low SUE group):**
@@ -33,13 +35,16 @@ For both Industries, firms with higher earnings surprises (High) significantly o
 
 b is how much CAR changes when SUE rises by 1. A rise of 0.01 in SUE goes with about +0.08 points of CAR in restaurants and +0.09 points in pharma. For restaurants, the slope cannot be told apart from zero. In both industries SUE explains less than 1% of the differences in CAR. Adding year fixed effects barely changes b (0.073 for restaurants, 0.093 for pharma).
 
-![Figure 2](figures/figure2.png)
+![Figure 2]
+<img width="1620" height="930" alt="image" src="https://github.com/user-attachments/assets/53bdee7a-64aa-4ffd-8d7c-8f1676c37e3b" />
+
 
 ## Why the industries differ
 Sample size: restaurants have 445 announcements against 2,574 for pharma, so a few extreme returns can tilt the restaurant line and the confidence intervals are about twice as wide. 
 
 
-![Figure 3](figures/figure3.png)
+![Figure 3] 
+<img width="1724" height="980" alt="image" src="https://github.com/user-attachments/assets/8ac4104c-4a0d-4558-8e25-9077e1438564" />
 
 I also think the industries differ because they face different forces that I could not test with my data: raw-material costs, the pandemic (good for pharma, bad for food chains) and seasonality. We should compare with an Industry more similar to Food. 
 
@@ -58,7 +63,7 @@ I also think the industries differ because they face different forces that I cou
 - Sample period and rules: announcements between 2021-01-01 and 2024-12-31 (earlier quarters are pulled only to compute lags); the announcement date (`rdq`) is known; SUE can be computed; last quarter's price is at least $5; |SUE| is at most 1; all three days (-1, 0, +1) have a return. Day 0 is the first trading day on or after the announcement date.
 
 ## How the tables fit together
-![Merge map](figures/merge_map.png)
+![Merge map]
 
 Compustat quarters are matched to CRSP with `gvkey` and the link file, keeping only the link whose dates cover the quarter end (`linkdt <= datadate <= linkenddt`), because one company can have different `permno` values over time. Lagged copies of the quarter table give EPS four quarters ago and the price one quarter ago (key: `gvkey` + quarter number). Daily stock returns are matched to daily market returns on `date`, and the three-day window around each announcement is matched back on `permno` + trading-day number.
 
