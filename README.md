@@ -74,8 +74,8 @@ I rebuilt one announcement for McDonald's, quarter ended 2024-09-30, announced 2
 | What was wrong | How I fixed it | How the results changed |
 | --- | --- | --- |
 | Return window ended 2024-12-31 and started a year too early | Set the return window to 2020-12-01 through 2025-01-31 so day +1 exists for late announcements | No change in the 450 events or in the group averages |
-| Change the table used for all the regression and analysis so that we don't count the top 5 CAR events (bias results) Now events change for SIC 58 = 445
-|
+| Use the wrong table for regression | Change the table used for all the regression and analysis so that we don't count the top 5 CAR events (bias results) | Now events change for SIC 58 = 445 (it used to be 450
+
 
 ## Where the code came from
 The structure comes from the class notebook & Gemini AI. I changed the keys, the rules and the checks, and I wrote the explanations myself with help of Gemini ai 
