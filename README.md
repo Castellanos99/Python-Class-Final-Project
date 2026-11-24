@@ -88,7 +88,7 @@ The structure comes from the class notebook & Gemini AI. I changed the keys, the
 
 ## Files
 ```
-notebooks/   Castellanos_Sofia_Project3.ipynb (runs top to bottom on WRDS JupyterHub)
+notebooks/   Castellanos_Sofia_Project3..ipynb (runs top to bottom on WRDS JupyterHub)
 figures/     figure1.png, figure2.png, figure3.png, merge_table
 docs/        Castellanos_Sofia_Project3.pdf (slides)
 README.md
